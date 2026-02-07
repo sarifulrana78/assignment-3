@@ -1,6 +1,6 @@
 /*prob-5*/
 function  analyzeText(text) {
-         if(typeof text !== "string"){
+         if(typeof text !== "string" || text.trim().length===0){
             return "Invalid"
          }
          let words=text.split(" ")
@@ -19,5 +19,5 @@ function  analyzeText(text) {
          }
 
 }
-/* console.log(analyzeText("12 2324" )) */
+console.log(analyzeText(""))
 
